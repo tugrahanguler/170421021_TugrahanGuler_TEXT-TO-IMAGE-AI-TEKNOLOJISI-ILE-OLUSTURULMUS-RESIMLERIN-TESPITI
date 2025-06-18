@@ -1,0 +1,2 @@
+timestamp,best_train_acc,best_val_acc,final_test_acc,model_path,log_path
+20250518_182720,0.930958,0.925500,0.925500,models\best_model_20250518_182720.pth,logs\training_log_20250518_182720.csv

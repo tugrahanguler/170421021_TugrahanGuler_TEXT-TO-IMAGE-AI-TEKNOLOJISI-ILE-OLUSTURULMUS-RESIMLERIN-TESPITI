@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugrAI - AI Görsel Analiz Platformu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <span>tugr<span class="highlight">AI</span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#">Ana Sayfa</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Yapay Zeka Üretimli Görselleri <span>Tespit Edin</span></h1>
+                <p>tugrAI,bir görselin AI tarafından oluşturulup oluşturulmadığını analiz eden bitirme projemdir.</p>
+            </section>
+            
+            <section class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                    </div>
+                    <div class="upload-text">
+                        <h3>Görseli yükle</h3>
+                        <p>Dosyayı sürükleyip bırakın veya bilgisayarınızdan seçin.</p>
+                        <button class="browse-btn">Dosya Seç</button>
+                    </div>
+                    <input type="file" class="file-input" id="fileInput" accept="image/*">
+                </div>
+                
+                <div class="preview-container" id="previewContainer">
+                    <img src="" alt="Görsel Önizleme" class="image-preview" id="imagePreview">
+                    <div class="file-info">
+                        <span class="file-name" id="fileName">image.jpg</span>
+                        <button class="remove-file" id="removeFile">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            Kaldır
+                        </button>
+                    </div>
+                </div>
+                
+                <button class="analyze-btn" id="analyzeBtn" disabled>
+                    <span class="spinner"></span>
+                    <span class="btn-text">Analiz Et</span>
+                </button>
+            </section>
+            
+            <section class="features" id="features">
+                <div class="section-title">
+                    <h2>Özellikler</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                        </div>
+                        <h3>Yüksek Doğruluk</h3>
+                        <p>%92 Doğruluk değerine sahip modelimi kullanmaktayım. </p>
+                    </div>                    
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>tugr<span class="highlight">AI</span></span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 tugrAI - Marmara Üniversitesi Bitirme Projesi</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

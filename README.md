@@ -1,2 +1,1 @@
-# 170421021_TugrahanGuler_AI-vs-Real-Image-Classifier
-AI-vs-Real-Image-Classifier
+Model dosyası 100MB sınırını aştığı için github'a yüklenemiyor.
